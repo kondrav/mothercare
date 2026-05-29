@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Gigabyte B760 GAMING X GEN5 | Задняя панель</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            background: linear-gradient(145deg, #14161a 0%, #1b1e24 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Inter', system-ui, sans-serif;
+            padding: 2rem 1.5rem;
+        }
+
+        .motherboard-card {
+            max-width: 1400px;
+            width: 100%;
+            background: #0a0c12;
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.7);
+            padding: 1.6rem 1.8rem 1.8rem;
+        }
+
+        .header-info {
+            text-align: center;
+            margin-bottom: 1.6rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 0.9rem;
+        }
+        .header-info h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #e6e9f0, #b4bed4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .header-info p {
+            color: #8e98b0;
+            margin-top: 0.4rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #1e222b;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            color: #b9c7e6;
+        }
+
+        .board-image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            background: #010101;
+            box-shadow: 0 12px 28px -8px black;
+        }
+
+        .board-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            pointer-events: none;
+        }
+
+        /* невидимые зоны для наведения */
+        .hotspot {
+            position: absolute;
+            width: 68px;
+            height: 24px;
+            background: transparent;
+            cursor: help;
+            transform: translate(-50%, -50%);
+            z-index: 30;
+        }
+        .hotspot:hover {
+            background: transparent;
+        }
+
+        /* всплывающая подсказка */
+        .tooltip-custom {
+            position: fixed;
+            background: rgba(10, 13, 20, 0.97);
+            backdrop-filter: blur(16px);
+            border-left: 5px solid #f5b042;
+            border-radius: 22px;
+            padding: 0.9rem 1.4rem;
+            color: #f2f5fc;
+            max-width: 400px;
+            min-width: 260px;
+            font-size: 0.9rem;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
+            z-index: 2000;
+            pointer-events: none;
+            line-height: 1.5;
+            transition: opacity 0.1s ease;
+        }
+        .tooltip-custom strong {
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: #ffda88;
+        }
+        .tooltip-custom span {
+            display: block;
+            font-size: 0.82rem;
+            color: #dee5fc;
+        }
+
+        .legend-note {
+            margin-top: 1.6rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.75rem;
+            color: #8f9bb3;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 0.6rem 1rem;
+            border-radius: 2rem;
+        }
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        @media (max-width: 800px) {
+            .motherboard-card { padding: 1rem; }
+            .hotspot { width: 52px; height: 22px; }
+            .tooltip-custom { max-width: 320px; padding: 0.7rem 1rem; }
+            .header-info h1 { font-size: 1.4rem; }
+        }
+        @media (max-width: 550px) {
+            .hotspot { width: 44px; height: 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="motherboard-card">
+    <div class="header-info">
+        <h1>🔌 Gigabyte B760 GAMING X GEN5</h1>
+        <p><span class="badge">LGA 1700 · PCIe 5.0 · DDR5</span> <span class="badge">Задняя панель I/O</span></p>
+        <p style="font-size: 0.75rem;">наведи на область разъёма — появится описание</p>
+    </div>
+
+    <div class="board-image-container">
+        <img class="board-img" src="1.webp" alt="Gigabyte B760 GAMING X GEN5" onerror="this.src='https://via.placeholder.com/1300x850?text=Gigabyte+B760+GAMING+X+GEN5'">
+
+        <!-- ========== ТОЧКИ С ТВОИМИ КООРДИНАТАМИ (длинные описания до 400 знаков) ========== -->
+
+        <div class="hotspot" style="top: 53.43%; left: 11.17%;"
+             data-name="USB 2.0 Type-A"
+             data-desc="Скорость до 480 Мбит/с. Универсальный порт для клавиатуры, мыши, принтера, веб-камеры, геймпада или MIDI-контроллера. Совместим с тысячами устройств, поддерживает горячее подключение. Обеспечивает ток до 500 мА — достаточно для большинства периферийных устройств. Идеальный выбор для офисной и домашней периферии, не требующей сверхвысокой пропускной способности."></div>
+
+        <div class="hotspot" style="top: 58.95%; left: 11.26%;"
+             data-name="USB 2.0 Type-A"
+             data-desc="Дополнительный порт USB 2.0 со скоростью 480 Мбит/с. Подходит для подключения мыши, клавиатуры, MFP, принтера, а также для загрузочных флешек с образами ОС. Надёжный и энергоэффективный интерфейс с обратной совместимостью с USB 1.1. Рекомендуется для устройств, где высокая скорость не критична, но важна стабильность сигнала и совместимость."></div>
+
+        <div class="hotspot" style="top: 50.5%; left: 21.52%;"
+             data-name="Антенный разъём Wi-Fi / Bluetooth"
+             data-desc="Разъём RP-SMA для подключения внешней антенны беспроводной связи. Используется для приёма и передачи сигналов Wi-Fi (диапазоны 2.4 ГГц, 5 ГГц и 6 ГГц) и Bluetooth. Качественная антенна позволяет значительно увеличить дальность и стабильность соединения, снизить потери пакетов. Современные беспроводные модули поддерживают высокие скорости и низкую задержку. Разъём стандартный, подходят большинство внешних антенн."></div>
+
+        <div class="hotspot" style="top: 53.95%; left: 33.24%;"
+             data-name="USB 2.0 Type-A"
+             data-desc="Порт USB 2.0 (480 Мбит/с). Надёжное решение для подключения офисной и игровой периферии: клавиатуры, мыши, веб-камеры, кардридера, MIDI-клавиатуры. Не требует дополнительного питания для большинства устройств. Сохраняет работоспособность при использовании удлинителей до 5 метров. Идеален для устройств ввода, а также для флешек небольшого объёма."></div>
+
+        <div class="hotspot" style="top: 59.21%; left: 32.9%;"
+             data-name="USB 2.0 Type-A"
+             data-desc="Четвёртый порт USB 2.0 на задней панели. Скорость до 480 Мбит/с. Подключайте принтер, сканер, внешний DVD-привод или зарядку для маломощных гаджетов. Отличается стабильностью и низкой задержкой, что важно для аудиоинтерфейсов и профессионального оборудования. Полная совместимость с USB-хабами и переходниками."></div>
+
+        <div class="hotspot" style="top: 52.14%; left: 47.64%;"
+             data-name="DisplayPort 1.2"
+             data-desc="Цифровой видеовыход DisplayPort версии 1.2. Максимальное разрешение до 4096x2304 пикселей при частоте 60 Гц. Поддерживает многоканальный аудиопоток (до 8 каналов 24 бит/192 кГц), технологии HDCP 2.3 и адаптивную синхронизацию (FreeSync). Позволяет подключать до двух мониторов последовательно (Daisy Chain) без дополнительных разветвителей. Идеальный выбор для игровых и профессиональных мониторов."></div>
+
+        <div class="hotspot" style="top: 58.95%; left: 48.33%;"
+             data-name="HDMI 2.1"
+             data-desc="Порт HDMI 2.1 с пропускной способностью до 48 Гбит/с. Поддерживает разрешение 4K при 60 Гц (максимально 4096x2160), технологию HDR10+, HLG и eARC для передачи качественного многоканального звука на ресивер. Обеспечивает глубину цвета 10/12 бит. Идеально подходит для подключения телевизоров, игровых консолей, проекторов. Совместим с HDCP 2.3 для защиты контента 4K и Ultra HD."></div>
+
+        <div class="hotspot" style="top: 53.78%; left: 59.97%;"
+             data-name="USB 3.2 Gen 1 Type-A (синий)"
+             data-desc="Высокоскоростной порт USB 3.2 Gen 1 с маркировкой синего цвета. Скорость передачи данных достигает 5 Гбит/с — примерно в 10 раз быстрее USB 2.0. Оптимален для внешних твердотельных накопителей (SSD), быстрых флеш-накопителей, систем видеозахвата и устройств виртуальной реальности. Обратно совместим с USB 2.0/1.1. Обеспечивает повышенный ток до 900 мА."></div>
+
+        <div class="hotspot" style="top: 58.78%; left: 60.66%;"
+             data-name="USB Type-C 3.2 Gen 2 (10 Гбит/с)"
+             data-desc="Универсальный симметричный порт USB Type-C с поддержкой стандарта USB 3.2 Gen 2. Скорость передачи данных до 10 Гбит/с. Поддерживает альтернативный режим DisplayPort (вывод видео на монитор/телевизор) и быструю зарядку устройств (до 15 Вт, 5В/3А). Идеально подходит для подключения современных док-станций, портативных SSD-накопителей (NVMe), мониторов с питанием через USB-C."></div>
+
+        <div class="hotspot" style="top: 47.22%; left: 73.76%;"
+             data-name="2.5 Gigabit Ethernet (RJ-45)"
+             data-desc="Сетевой порт RJ-45 с пропускной способностью 2.5 Гбит/с (2500 Мбит/с). Обеспечивает высокоскоростное проводное подключение к локальной сети и интернету. Поддерживает автоматическое определение типа кабеля (Auto MDI-X), энергосберегающие режимы (Energy Efficient Ethernet) и технологию Wake-on-LAN. Идеальное решение для онлайн-игр, потокового вещания высокого разрешения, работы с NAS и быстрой передачи больших файлов по сети."></div>
+
+        <div class="hotspot" style="top: 53.86%; left: 74.45%;"
+             data-name="Q-Flash Plus (USB порт для BIOS)"
+             data-desc="Специализированный порт USB 2.0 с поддержкой технологии Q-Flash Plus. Позволяет обновить BIOS/UEFI без установленного центрального процессора, оперативной памяти и видеокарты. Достаточно подготовить флеш-накопитель с файлом прошивки (переименованным согласно инструкции), вставить его в этот порт и нажать соответствующую кнопку на панели. Спасает при несовместимости нового процессора с текущей версией BIOS."></div>
+
+        <div class="hotspot" style="top: 58.78%; left: 74.1%;"
+             data-name="USB 3.2 Gen 1 Type-A (5 Гбит/с)"
+             data-desc="Дополнительный порт USB 3.2 Gen 1 Type-A. Скорость передачи информации до 5 Гбит/с (суперскорость). Отлично подходит для внешних накопителей, игровых гарнитур с высококачественным звуком, устройств захвата видео. Синяя маркировка помогает отличить высокоскоростные порты от стандартных USB 2.0. Обеспечивает быструю зарядку мобильной электроники."></div>
+
+        <!-- аудиоразъёмы 7.1 -->
+        <div class="hotspot" style="top: 43.86%; left: 85.74%;"
+             data-name="Аудио: центр / сабвуфер (оранжевый)"
+             data-desc="Разъём 3.5 мм оранжевого цвета для подключения центрального канала и сабвуфера в многоканальных акустических системах 5.1 или 7.1. Обеспечивает кинематографичное звучание при просмотре фильмов и игре. Используется совместно с зелёным (фронтальные колонки/наушники) и чёрным (тыловые динамики) разъёмами. Поддержка HD Audio, высокое качество ЦАП."></div>
+
+        <div class="hotspot" style="top: 50.67%; left: 85.74%;"
+             data-name="Аудио: тыловые динамики (чёрный)"
+             data-desc="Чёрный разъём 3.5 мм для подключения тыловых колонок в системе объёмного звука 5.1 или 7.1. Создаёт эффект присутствия благодаря правильному позиционированию звуковых эффектов позади слушателя. Идеально подходит для игр с поддержкой объёмного звука, кинофильмов в форматах Dolby Digital и DTS. Работает совместно с линейным выходом (зелёный) и центральным каналом."></div>
+
+        <div class="hotspot" style="top: 57.31%; left: 85.74%;"
+             data-name="Аудио: боковые каналы (серый)"
+             data-desc="Серый разъём 3.5 мм для подключения боковых каналов в аудиосистеме формата 7.1. Расширяет звуковую сцену, добавляя глубину и реалистичность. Рекомендуется для домашних кинотеатров, игровых сборок с качественной акустикой. Позволяет полностью раскрыть возможности современных игр и фильмов с объёмным звуком."></div>
+
+        <div class="hotspot" style="top: 43.95%; left: 93.07%;"
+             data-name="Line In (синий) — линейный вход"
+             data-desc="Аналоговый линейный вход 3.5 мм с чувствительностью 2 В RMS. Предназначен для подключения внешних аудиоисточников: MP3-плееров, синтезаторов, электрогитар, телевизоров, игровых консолей, магнитол. Позволяет записывать звук без искажений с качеством до 24 бит / 192 кГц. Используйте для оцифровки аудиокассет, винила или для трансляции звука с внешних устройств."></div>
+
+        <div class="hotspot" style="top: 50.5%; left: 93.16%;"
+             data-name="Line Out (зелёный) — выход на наушники/колонки"
+             data-desc="Основной стереовыход 3.5 мм зелёного цвета для подключения наушников, активных колонок, усилителя или гарнитуры. Обеспечивает высокое качество звука с соотношением сигнал/шум до 110 дБ. Поддерживает подключение гарнитур с микрофоном через специальный разветвитель (комбо-разъём). Идеален для игр, прослушивания музыки, просмотра фильмов и видеоконференций."></div>
+
+        <div class="hotspot" style="top: 57.05%; left: 93.07%;"
+             data-name="Mic In (розовый) — микрофонный вход"
+             data-desc="3.5 мм вход для микрофона (розовый) с чувствительностью -65 дБ. Поддерживает электретные микрофоны, гарнитуры, студийные конденсаторные микрофоны (с дополнительным питанием). Технология шумоподавления и усиление сигнала до 32 дБ обеспечивают чистую запись голоса. Отлично подходит для общения в онлайн-играх, проведения конференций, записи подкастов и стриминга."></div>
+    </div>
+
+    <div class="legend-note">
+        <div class="legend-item">⚡ наведи курсор на область порта</div>
+        <div class="legend-item">🔍 все разъёмы: USB, видео, LAN 2.5G, аудио 7.1, Wi‑Fi</div>
+    </div>
+</div>
+
+<script>
+    // логика тултипов — без Jekyll, чистый JS
+    (function() {
+        let tooltip = null;
+        let activeHotspot = null;
+        let hideTimer = null;
+
+        function getTooltip() {
+            if (!tooltip) {
+                const div = document.createElement('div');
+                div.className = 'tooltip-custom';
+                div.style.opacity = '0';
+                document.body.appendChild(div);
+                tooltip = div;
+            }
+            return tooltip;
+        }
+
+        function escapeHTML(str) {
+            if (!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+
+        function showTooltip(name, desc, mouseX, mouseY) {
+            const tip = getTooltip();
+            tip.innerHTML = `<strong>🔌 ${escapeHTML(name)}</strong><span>${escapeHTML(desc)}</span>`;
+
+            let left = mouseX + 18;
+            let top = mouseY - 38;
+            const rect = tip.getBoundingClientRect();
+            const winW = window.innerWidth;
+            const winH = window.innerHeight;
+
+            if (left + rect.width > winW - 12) left = mouseX - rect.width - 18;
+            if (top + rect.height > winH - 18) top = mouseY - rect.height - 12;
+            if (left < 6) left = 12;
+            if (top < 6) top = 10;
+
+            tip.style.left = left + 'px';
+            tip.style.top = top + 'px';
+            tip.style.opacity = '1';
+        }
+
+        function hideTooltip() {
+            if (tooltip) tooltip.style.opacity = '0';
+            activeHotspot = null;
+        }
+
+        const hotspots = document.querySelectorAll('.hotspot');
+
+        hotspots.forEach(zone => {
+            const nameAttr = zone.getAttribute('data-name') || 'порт';
+            const descAttr = zone.getAttribute('data-desc') || 'стандартный интерфейс';
+
+            zone.addEventListener('mouseenter', (e) => {
+                if (hideTimer) clearTimeout(hideTimer);
+                activeHotspot = zone;
+                showTooltip(nameAttr, descAttr, e.clientX, e.clientY);
+            });
+
+            zone.addEventListener('mousemove', (e) => {
+                if (activeHotspot === zone && tooltip && tooltip.style.opacity === '1') {
+                    let left = e.clientX + 18;
+                    let top = e.clientY - 38;
+                    const rect = tooltip.getBoundingClientRect();
+                    const winW = window.innerWidth;
+                    const winH = window.innerHeight;
+                    if (left + rect.width > winW - 12) left = e.clientX - rect.width - 18;
+                    if (top + rect.height > winH - 18) top = e.clientY - rect.height - 12;
+                    if (left < 6) left = 12;
+                    if (top < 6) top = 10;
+                    tooltip.style.left = left + 'px';
+                    tooltip.style.top = top + 'px';
+                }
+            });
+
+            zone.addEventListener('mouseleave', () => {
+                if (activeHotspot === zone) {
+                    hideTimer = setTimeout(() => hideTooltip(), 20);
+                }
+            });
+        });
+
+        document.body.addEventListener('mousemove', (e) => {
+            let overAny = false;
+            for (let z of hotspots) {
+                const rect = z.getBoundingClientRect();
+                if (e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom) {
+                    overAny = true;
+                    break;
+                }
+            }
+            if (!overAny && tooltip && tooltip.style.opacity === '1') {
+                if (hideTimer) clearTimeout(hideTimer);
+                hideTimer = setTimeout(() => hideTooltip(), 15);
+            } else if (overAny && hideTimer) {
+                clearTimeout(hideTimer);
+            }
+        });
+
+        window.addEventListener('scroll', () => hideTooltip());
+        window.addEventListener('resize', () => hideTooltip());
+    })();
+</script>
+</body>
+</html>
